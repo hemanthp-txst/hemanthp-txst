@@ -1,16 +1,12 @@
-## Hi there 👋
+<h1>👋 Hii </h1>
 
-<!--
-**hemanthp-txst/hemanthp-txst** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🎨 UI Component: About Me
+```jsx
+const Me = () => ({
+  role: "Web & UX Designer",
+  skills: ["UI/UX", "Animations", "HTML", "CSS", "Python", "SQL"],
+  frameworks: ["React", "Next.js", "Tailwind"], 
+  passion: "Building clean, modern, intuitive interfaces",
+});
+export default Me;
