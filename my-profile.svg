@@ -45,16 +45,16 @@
 
 <!-- Profile Info -->
 
-<text x="15" y="70" fill="#24292f">
+<text x="15" y="50" fill="#24292f">
 
-<tspan x="18" y="65">hemanthp-txst</tspan> --------------------------------------------------------
-<tspan x="18" y="90" class="cc">. </tspan><tspan class="key">About Me</tspan>: 
-<tspan x="50" y="118" class="value">Hello, It is a pleasure to meet you. I am a Web and UX designer at </tspan>
-<tspan x="50" y="137" class="value">Texas State University Libraries.</tspan>
+<tspan x="18" y="50">hemanthp-txst</tspan> --------------------------------------------------------
+<tspan x="18" y="80" class="cc">. </tspan><tspan class="key">About Me</tspan>: 
+<tspan x="50" y="108" class="value">Hello, It is a pleasure to meet you. I am a Web and UX designer at </tspan>
+<tspan x="50" y="130" class="value">Texas State University Libraries.</tspan>
 
 
 
-<tspan x="18" y="170">- TechStack</tspan> ----------------------------------------------------------
+<tspan x="18" y="165">- TechStack</tspan> ----------------------------------------------------------
 
 <tspan x="18" y="200" class="cc">. </tspan><tspan class="key">IDE</tspan>:  
 <tspan x="18" y="290" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:
