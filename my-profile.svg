@@ -7,7 +7,7 @@
     .value  { fill: #007096; }
     .cc   { fill: #b5b3afff; }
     .addColor {fill: #1a7f37;}
-.delColor {fill: #cf222e;}
+    .delColor {fill: #cf222e;}
     text, tspan { white-space: pre; }
   </style>
 
