@@ -12,7 +12,7 @@
   </style>
 
   <!-- Background -->
-<rect width="750px" height="900px" fill="#f5f5f5ff" rx="15"/>
+<rect width="750px" height="900px" fill="#ffffff" rx="15"/>
 <!-- <text x="15" y="30" fill="#24292f" class="ascii">
   <tspan x="15" y="30">                                                            </tspan>
   <tspan x="15" y="50">                                                            </tspan>
