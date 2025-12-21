@@ -1,0 +1,46 @@
+name: Update GitHub stats SVG
+
+on:
+  schedule:
+    # every day at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # --- CACHE PIP DEPENDENCIES ---
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/cache/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r cache/requirements.txt
+
+      - name: Run stats script
+        env:
+          GH_STATS_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_STATS_USER: ${{ secrets.GH_USER_NAME }}
+        run: python stats.py
+
+      - name: Commit updated SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.io"
+          git add card-out.svg
+          git commit -m "Update stats SVG" || echo "No changes"
+          git push
