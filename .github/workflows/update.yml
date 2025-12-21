@@ -33,14 +33,14 @@ jobs:
 
       - name: Run stats script
         env:
-          GH_STATS_TOKEN: ${{ secrets.GH_TOKEN }}
-          GH_STATS_USER: ${{ secrets.GH_USER_NAME }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_USER_NAME: ${{ secrets.GH_USER_NAME }}
         run: python stats.py
 
       - name: Commit updated SVG
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.io"
-          git add card-out.svg
+          git add light-mode-profile.svg
           git commit -m "Update stats SVG" || echo "No changes"
           git push
