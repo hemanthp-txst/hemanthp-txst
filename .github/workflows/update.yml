@@ -5,7 +5,8 @@ on:
     # every sunday at 00:00 UTC
     - cron: '0 0 * * 0'
   workflow_dispatch:
-
+permissions:
+  contents: write
 jobs:
   update-stats:
     runs-on: ubuntu-latest
