@@ -206,7 +206,7 @@
       <stop offset=".93" stop-color="#3fa82c" />
       <stop offset="1" stop-color="#3fae2a" />
     </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="73" y1="103.82" x2="221.65" y2="98.01" ns0:href="#linear-gradient" />
+    <linearGradient id="linear-gradient-2" x1="73" y1="103.82" x2="221.65" y2="98.01" href="#linear-gradient" />
     <linearGradient id="linear-gradient-3" x1="102.25" y1="98.02" x2="180.77" y2="104.34" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#6cc04a" />
       <stop offset=".09" stop-color="#6cc04a" />
