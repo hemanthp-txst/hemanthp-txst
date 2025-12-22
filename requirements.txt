@@ -1,4 +1,3 @@
-os
 requests
 xml.etree.ElementTree
 pathlib
