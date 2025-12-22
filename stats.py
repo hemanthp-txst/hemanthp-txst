@@ -287,6 +287,7 @@ def get_total_loc_cached(username):
 
 # UPDATE SVG
 def update_svg(svg_path: Path, stats: dict):
+    ET.register_namespace("", "http://www.w3.org/2000/svg")
     tree = ET.parse(svg_path)
     root = tree.getroot()
 
