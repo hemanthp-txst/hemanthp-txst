@@ -192,9 +192,7 @@ def graph_contributions_all_time():
         "login": USER_NAME,
     }
     r = query_request("graph_contributions_all_time", query, variables)
-    total = r.json()["data"]["user"]["contributionsCollection"][
-        "contributionCalendar"
-    ]["totalContributions"]
+    total = r.json()["data"]["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
     return int(total)
 
 # ==== GATHER STATS FOR SVG ====
