@@ -192,6 +192,7 @@ def graph_contributions_all_time():
         "login": USER_NAME,
     }
     r = query_request("graph_contributions_all_time", query, variables)
+    print(r.json())
     total = r.json()["data"]["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
     return int(total)
 
