@@ -182,7 +182,7 @@ def graph_contributions_all_time():
       }
     }
     """
-    start_iso = "2025-01-01T00:00:00Z"
+    start_iso = "2026-01-01T00:00:00Z"
     now = datetime.now(timezone.utc)
     end_iso = now.replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
